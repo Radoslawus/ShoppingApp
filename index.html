@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/icon-192.png">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="./dexie.min.js"></script>
+    <script defer src="index.js"></script>
+    <script defer src="sw.js"></script>
+    <title>ShoppingApp</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <p>Lista Zakupów</p>
+        </nav>
+        <form id="itemForm">
+            <label for="nameInput">
+                Nazwa towaru:
+                <input type="text" id="nameInput" required>
+            </label>
+            <label for="quantityInput">
+                Ilość:
+                <input type="number" id="quantityInput" value=1>
+                sztuk
+            </label>
+            <label for="priceInput" style="margin-right: 29px;">
+                Cena:
+                <input type="number" id="priceInput" value=0 step=".01">
+                zł
+            </label>
+            <button type="submit" id="addItemBtn">Dodaj Towar</button>
+        </form>
+    </div>
+    <div id="itemsDiv"></div>
+    <div class="calcContainer">
+       <div id="totalPriceDiv"></div>
+       <div id="restPriceDiv"></div>
+    </div>
+</body>
+</html>

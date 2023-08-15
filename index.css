@@ -1,0 +1,125 @@
+* {
+    margin: unset;
+    padding: unset;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+nav {
+    background: #00805a;
+    height: 3rem;
+    line-height: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container {
+    padding: 1rem;
+}
+
+#itemForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#itemForm label {
+    width: 12rem;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#itemForm input {
+    height: 2rem;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+}
+
+#quantityInput, #priceInput {
+    width: 3rem;
+}
+
+#nameInput {
+    width: 12rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#addItemBtn {
+    border: unset;
+    background: #00805a;
+    color: #fff;
+    padding: .7rem;
+    border-radius: 3px;
+}
+
+#itemsDiv {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background: #eaeaea;
+    margin-bottom: .5rem;
+}
+
+.checkbox {
+    height: 100%;
+    width: 2.5rem;
+}
+
+.itemInfo {
+    text-align: center;
+}
+
+.deleteBtn {
+    margin: 0 0 0 auto;
+    border: unset;
+    background: #b10000;
+    color: #fff;
+    font-size: .8rem;
+    width: 2.5rem;
+    height: 100%;
+}
+
+.deleteBtn:active {
+    margin-top: 3px;
+}
+
+.purchased {
+    background: #00805a;
+    color: #fff ;
+}
+
+.purchased p {
+    text-decoration: line-through;
+}
+
+.calcContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+#totalPriceDiv {
+    color: #00805a;
+}
+
+#restPriceDiv {
+    margin-top: 5px;
+    color: #b10000;
+}
